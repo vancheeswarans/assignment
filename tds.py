@@ -13,7 +13,6 @@ def maximum(a, b, c):
     return largest 
  
  
-# Driven code 
 a = int(input("First number"))
 b = int(input("Second number"))
 c = int(input("Third number"))
