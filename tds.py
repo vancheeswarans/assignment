@@ -1,17 +1,9 @@
-def maximum(a, b, c): 
- 
-    if (a >= b) and (a >= c): 
-        largest = a 
- 
-    elif (b >= a) and (b >= c): 
-        largest = b 
-    else: 
-        largest = c 
-         
-    return largest 
- 
- 
-a = int(input("First number"))
-b = int(input("Second number"))
-c = int(input("Third number"))
-print(maximum(a, b, c)) 
+import streamlit as st
+
+title = st.title('Maximum of 3 numbers:')
+
+number1 = st.number_input('Input 1st Number:') 
+number2 = st.number_input('Input 2nd Number:') 
+number3 = st.number_input('Input 3rd Number:')
+
+st.write(max([number1,number2,number3]))
