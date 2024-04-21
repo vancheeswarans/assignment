@@ -1,3 +1,5 @@
+import streamlit as st
+
 def maximum(a, b, c): 
  
     if (a >= b) and (a >= c): 
